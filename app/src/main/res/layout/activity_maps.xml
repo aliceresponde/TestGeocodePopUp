@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapsActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#1cbdd3"
+        android:id="@+id/rl_wraper">
+        <EditText
+            android:layout_marginTop="5dp"
+            android:paddingLeft="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:hint="Dirección"
+            android:background="#FFFF"
+            android:id="@+id/et_address"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/img_b_search"
+            android:layout_toLeftOf="@+id/img_b_search" />
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/img_b_search"
+            android:background="@android:color/white"
+            android:src="@mipmap/ic_search"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+</LinearLayout>

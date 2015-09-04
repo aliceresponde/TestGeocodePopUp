@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/layout_border"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#1cbdd3"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/Indexparameterheader"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:text="Dirección"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/et_address_pop"
+                android:background="@android:color/white"
+                android:layout_below="@+id/Indexparameterheader" />
+
+                <com.github.rahatarmanahmed.cpv.CircularProgressView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/progress_view"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cpv_animAutostart="true"
+                    app:cpv_indeterminate="true"
+                    android:layout_below="@+id/Indexparameterheader"
+                    android:layout_alignRight="@+id/Indexparameterheader"
+                    android:layout_alignEnd="@+id/Indexparameterheader" />
+
+        </RelativeLayout>
+
+
+
+            <ListView
+                android:layout_marginTop="90dp"
+                android:id="@+id/lv_addresses"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:fastScrollAlwaysVisible="true" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
