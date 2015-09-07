@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/layout_border"
         android:orientation="vertical"
         android:padding="3dp" >
